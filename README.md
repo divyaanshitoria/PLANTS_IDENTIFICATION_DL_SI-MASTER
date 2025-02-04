@@ -34,10 +34,7 @@ This dataset contains 4242 images of flowers. The data collection is based on th
 The pictures are divided into five classes: chamomile, tulip, rose, sunflower, dandelion. For each class there are about 800 photos. Photos are not high resolution, about 320x240 pixels. Photos are not reduced to a single size, they have different proportions!
 
 
-### CNN Architecture
-This is how our CNN architecture looks like !
 
-![architecture.png](./assets/architecture.png)
 
 #### Required Libraries
 
@@ -72,12 +69,11 @@ This is how our CNN architecture looks like !
     model.add(Dense(units=no_of_classes, activation='softmax', name='Output'))   
 ```
 #### Plotting Results
-![graph.png](./assets/graph.png)
+
 
 - From the Training and Validation Accuracy graph above, our model does not seem to be overfitted, which is great!
 - Also, Our Training and Validation Loss graph above also indicates a good learning rate.
 
-![matrix.png](./assets/matrix.png)
 
 Note that, 0,1,2,3,4 values in this matrix means daisies, dandelions, roses, sunflowers, tulips respectively
 - Our confusion matrix indicates that a lot of prediction errors came from distinguishing between rose and tulip.
